@@ -15,7 +15,7 @@ const js = fs.readFileSync(path.join(__dirname, "script.js"), "utf8");
 
 const body = [
   "{\\rtf1\\ansi\\deff0",
-  "\\b Hostel Webpage Practical - Shweta Sharma\\b0\\par",
+  "\\b Hostel Webpage Practical\\b0\\par",
   "Assignment: Create a hostel webpage using HTML, CSS, and JavaScript with background image, leave form, hostel fee details, map location, and login page.\\par\\par",
   "\\b GitHub Repository Link:\\b0 https://github.com/Bhavna248/Hostel_Webpage_Practical\\par",
   "\\b Deployment Link (GitHub Pages):\\b0 https://bhavna248.github.io/Hostel_Webpage_Practical/\\par",
@@ -29,6 +29,6 @@ const body = [
   "\\par}",
 ].join("\n");
 
-const outPath = path.join(__dirname, "Hostel_Webpage_Practical_Shweta_Sharma.doc");
+const outPath = path.join(__dirname, "Hostel_Webpage_Practical.doc");
 fs.writeFileSync(outPath, body, "utf8");
 console.log(`Created ${outPath}`);
