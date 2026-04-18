@@ -1,0 +1,482 @@
+{\rtf1\ansi\deff0
+\b Hostel Webpage Practical Submission\b0\par
+Practical: Create a hostel webpage using HTML, CSS, and JavaScript with background image, leave application form, hostel fee details, hostel location map, login page, and related information.\par\par
+\b Open-source Repository Link:\b0 https://github.com/Bhavna248/Hostel_Webpage_Practical\par
+\b Deployment Link (Verification):\b0 https://bhavna248.github.io/Hostel_Webpage_Practical/\par\par
+\b Project Files Included:\b0 index.html, styles.css, script.js\par\par
+\b index.html\b0\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+  <head>\par
+    <meta charset="UTF-8" />\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\par
+    <title>Cauvery Girl Hostel - NIT Kurukshetra</title>\par
+    <link rel="icon" type="image/png" href="nitkkr-logo.png" />\par
+    <link rel="stylesheet" href="styles.css" />\par
+  </head>\par
+  <body>\par
+    <header class="hero" id="home">\par
+      <nav class="navbar">\par
+        <div class="brand">\par
+          <img src="nitkkr-logo.png" alt="NIT Kurukshetra logo" class="brand-logo" />\par
+          <span>Cauvery Girl Hostel</span>\par
+        </div>\par
+        <ul class="nav-links">\par
+          <li><a href="#about">About</a></li>\par
+          <li><a href="#fees">Fees</a></li>\par
+          <li><a href="#leave-form">Leave Form</a></li>\par
+          <li><a href="#location">Location</a></li>\par
+          <li><a href="#login">Login</a></li>\par
+        </ul>\par
+      </nav>\par
+      <div class="hero-content">\par
+        <h1>Cauvery Girl Hostel, NIT Kurukshetra</h1>\par
+        <p>\par
+          A complete hostel portal for residents with fee details, leave request\par
+          management, and quick access to hostel resources.\par
+        </p>\par
+        <a href="#leave-form" class="btn">Apply for Leave</a>\par
+      </div>\par
+    </header>\par
+\par
+    <main>\par
+      <section id="about" class="section card">\par
+        <h2>About Our Hostel</h2>\par
+        <p>\par
+          Cauvery Girl Hostel, NIT Kurukshetra provides secure accommodation for\par
+          students with\par
+          24/7 warden support, CCTV monitoring, high-speed Wi-Fi, and hygienic\par
+          food services.\par
+        </p>\par
+        <div class="info-grid">\par
+          <article>\par
+            <h3>Facilities</h3>\par
+            <ul>\par
+              <li>Total 292 rooms available</li>\par
+              <li>All rooms are single seater</li>\par
+              <li>Laundry and Housekeeping</li>\par
+              <li>Biometric Entry System</li>\par
+            </ul>\par
+          </article>\par
+          <article>\par
+            <h3>Hostel Rules</h3>\par
+            <ul>\par
+              <li>Entry before 9:00 PM</li>\par
+              <li>Visitor timings: 5:00 PM - 7:00 PM</li>\par
+              <li>Mandatory ID card for entry</li>\par
+              <li>Silence hours after 10:30 PM</li>\par
+            </ul>\par
+          </article>\par
+        </div>\par
+      </section>\par
+\par
+      <section id="fees" class="section card">\par
+        <h2>Hostel Fee Details</h2>\par
+        <table>\par
+          <thead>\par
+            <tr>\par
+              <th>Room Type</th>\par
+              <th>Monthly Fee</th>\par
+              <th>Security Deposit</th>\par
+              <th>Mess Charges</th>\par
+            </tr>\par
+          </thead>\par
+          <tbody>\par
+            <tr>\par
+              <td>Triple Sharing (Non-AC)</td>\par
+              <td>INR 6,000</td>\par
+              <td>INR 3,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+            <tr>\par
+              <td>Double Sharing (Non-AC)</td>\par
+              <td>INR 7,500</td>\par
+              <td>INR 3,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+            <tr>\par
+              <td>Double Sharing (AC)</td>\par
+              <td>INR 9,500</td>\par
+              <td>INR 4,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+          </tbody>\par
+        </table>\par
+      </section>\par
+\par
+      <section id="leave-form" class="section card">\par
+        <h2>Leave Application Form</h2>\par
+        <form id="leaveApplicationForm">\par
+          <div class="form-row">\par
+            <label for="studentName">Student Name</label>\par
+            <input type="text" id="studentName" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="roomNumber">Room Number</label>\par
+            <input type="text" id="roomNumber" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="leaveFrom">Leave From</label>\par
+            <input type="date" id="leaveFrom" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="leaveTo">Leave To</label>\par
+            <input type="date" id="leaveTo" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="reason">Reason</label>\par
+            <textarea id="reason" rows="4" required></textarea>\par
+          </div>\par
+          <button type="submit" class="btn">Submit Application</button>\par
+          <p id="leaveMessage" class="message" aria-live="polite"></p>\par
+        </form>\par
+      </section>\par
+\par
+      <section id="location" class="section card">\par
+        <h2>Hostel Location</h2>\par
+        <p>Cauvery Girl Hostel, NIT Kurukshetra, Haryana, India.</p>\par
+        <div class="map-wrap">\par
+          <iframe\par
+            title="Hostel location map"\par
+            src="https://www.google.com/maps?q=NIT+Kurukshetra+Haryana&output=embed"\par
+            loading="lazy"\par
+          ></iframe>\par
+        </div>\par
+      </section>\par
+\par
+      <section id="login" class="section card">\par
+        <h2>Resident Login</h2>\par
+        <form id="loginForm">\par
+          <div class="form-row">\par
+            <label for="email">Email</label>\par
+            <input type="email" id="email" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="password">Password</label>\par
+            <input type="password" id="password" minlength="6" required />\par
+          </div>\par
+          <button type="submit" class="btn">Login</button>\par
+          <p id="loginMessage" class="message" aria-live="polite"></p>\par
+        </form>\par
+      </section>\par
+    </main>\par
+\par
+    <footer>\par
+      <p>Contact: +91-98765-43210 | Email: cauveryhostel@nitkkr.ac.in</p>\par
+      <p>Emergency Warden Helpline: +91-90000-12121</p>\par
+    </footer>\par
+\par
+    <script src="script.js"></script>\par
+  </body>\par
+</html>\par
+
+\par\par\b styles.css\b0\par
+* \{\par
+  box-sizing: border-box;\par
+\}\par
+\par
+body \{\par
+  margin: 0;\par
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;\par
+  background: linear-gradient(180deg, #dfe8ff 0%, #e9efff 45%, #e2e9ff 100%);\par
+  color: #1f2436;\par
+  line-height: 1.6;\par
+  font-weight: 500;\par
+\}\par
+\par
+.hero \{\par
+  min-height: 84vh;\par
+  background-image: linear-gradient(rgba(9, 17, 51, 0.6), rgba(10, 19, 58, 0.82)),\par
+    url("NITIMAGE.jpg");\par
+  background-size: cover;\par
+  background-position: center 35%;\par
+  color: #fff;\par
+  padding: 16px 20px 50px;\par
+  border-bottom-left-radius: 26px;\par
+  border-bottom-right-radius: 26px;\par
+  position: relative;\par
+\}\par
+\par
+.navbar \{\par
+  display: flex;\par
+  justify-content: space-between;\par
+  align-items: center;\par
+  gap: 12px;\par
+  background: rgba(187, 202, 255, 0.18);\par
+  border: 1px solid rgba(202, 214, 255, 0.42);\par
+  border-radius: 14px;\par
+  padding: 12px 14px;\par
+\}\par
+\par
+.brand \{\par
+  display: flex;\par
+  align-items: center;\par
+  gap: 10px;\par
+  font-size: 1.25rem;\par
+  font-weight: 800;\par
+  letter-spacing: 0.4px;\par
+\}\par
+\par
+.brand-logo \{\par
+  width: 40px;\par
+  height: 40px;\par
+  border-radius: 50%;\par
+  object-fit: cover;\par
+  background: #fff;\par
+  border: 2px solid rgba(255, 255, 255, 0.6);\par
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);\par
+\}\par
+\par
+.nav-links \{\par
+  list-style: none;\par
+  display: flex;\par
+  gap: 16px;\par
+  margin: 0;\par
+  padding: 0;\par
+\}\par
+\par
+.nav-links a \{\par
+  text-decoration: none;\par
+  color: #fff;\par
+  font-weight: 700;\par
+  font-size: 0.97rem;\par
+  opacity: 0.92;\par
+  padding: 6px 10px;\par
+  border-radius: 8px;\par
+  transition: background-color 0.2s ease, transform 0.2s ease;\par
+\}\par
+\par
+.nav-links a:hover \{\par
+  opacity: 1;\par
+  background: rgba(255, 255, 255, 0.18);\par
+  transform: translateY(-1px);\par
+\}\par
+\par
+.hero-content \{\par
+  max-width: 820px;\par
+  margin: 92px auto 0;\par
+  text-align: center;\par
+  background: rgba(8, 14, 40, 0.38);\par
+  border: 1px solid rgba(255, 255, 255, 0.18);\par
+  border-radius: 18px;\par
+  padding: 30px 22px;\par
+  box-shadow: 0 14px 28px rgba(5, 10, 35, 0.35);\par
+\}\par
+\par
+.hero-content h1 \{\par
+  margin: 0 0 10px;\par
+  font-size: 2.55rem;\par
+  line-height: 1.25;\par
+  font-weight: 900;\par
+  letter-spacing: 0.3px;\par
+  text-transform: uppercase;\par
+\}\par
+\par
+.hero-content p \{\par
+  font-size: 1.12rem;\par
+  font-weight: 600;\par
+  color: #edf2ff;\par
+  max-width: 700px;\par
+  margin: 0 auto;\par
+\}\par
+\par
+.btn \{\par
+  display: inline-block;\par
+  margin-top: 10px;\par
+  border: none;\par
+  border-radius: 10px;\par
+  background: linear-gradient(135deg, #0069ff, #4f46e5);\par
+  color: #fff;\par
+  font-weight: 700;\par
+  padding: 11px 20px;\par
+  text-decoration: none;\par
+  cursor: pointer;\par
+  box-shadow: 0 8px 18px rgba(43, 85, 255, 0.35);\par
+  transition: transform 0.2s ease, box-shadow 0.2s ease;\par
+\}\par
+\par
+.btn:hover \{\par
+  transform: translateY(-2px);\par
+  box-shadow: 0 10px 20px rgba(43, 85, 255, 0.45);\par
+\}\par
+\par
+main \{\par
+  max-width: 1080px;\par
+  margin: 28px auto;\par
+  padding: 0 14px;\par
+\}\par
+\par
+.section \{\par
+  margin-bottom: 18px;\par
+\}\par
+\par
+.card \{\par
+  background: linear-gradient(180deg, #edf2ff 0%, #e6edff 100%);\par
+  border: 1px solid #cdd9ff;\par
+  border-radius: 14px;\par
+  padding: 22px;\par
+  box-shadow: 0 10px 24px rgba(28, 45, 118, 0.12);\par
+  transition: transform 0.2s ease, box-shadow 0.2s ease;\par
+\}\par
+\par
+.card:hover \{\par
+  transform: translateY(-4px);\par
+  box-shadow: 0 14px 28px rgba(28, 45, 118, 0.13);\par
+\}\par
+\par
+.card h2 \{\par
+  margin-top: 2px;\par
+  margin-bottom: 14px;\par
+  color: #1a2b84;\par
+  border-left: 5px solid #3349d1;\par
+  padding-left: 12px;\par
+  font-size: 1.55rem;\par
+  font-weight: 900;\par
+  text-transform: uppercase;\par
+  letter-spacing: 0.3px;\par
+\}\par
+\par
+.card h3 \{\par
+  font-size: 1.1rem;\par
+  font-weight: 800;\par
+  color: #1f2f80;\par
+\}\par
+\par
+.card p,\par
+.card li,\par
+td \{\par
+  font-size: 1rem;\par
+  font-weight: 600;\par
+\}\par
+\par
+.info-grid \{\par
+  display: grid;\par
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));\par
+  gap: 16px;\par
+\}\par
+\par
+table \{\par
+  width: 100%;\par
+  border-collapse: collapse;\par
+  border-radius: 12px;\par
+  overflow: hidden;\par
+  box-shadow: 0 6px 18px rgba(27, 48, 124, 0.08);\par
+\}\par
+\par
+th,\par
+td \{\par
+  border: 1px solid #ced5e8;\par
+  padding: 10px;\par
+  text-align: left;\par
+\}\par
+\par
+tbody tr:nth-child(even) \{\par
+  background: #dde7ff;\par
+\}\par
+\par
+th \{\par
+  background: #d8e3ff;\par
+  color: #20295c;\par
+  font-size: 1rem;\par
+  font-weight: 800;\par
+  text-transform: uppercase;\par
+\}\par
+\par
+.form-row \{\par
+  margin-bottom: 12px;\par
+\}\par
+\par
+label \{\par
+  display: block;\par
+  font-weight: 800;\par
+  margin-bottom: 5px;\par
+  color: #1d2e7c;\par
+\}\par
+\par
+input,\par
+textarea \{\par
+  width: 100%;\par
+  border: 1px solid #b6c6f4;\par
+  background: #f1f5ff;\par
+  border-radius: 8px;\par
+  padding: 10px;\par
+  font: inherit;\par
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;\par
+\}\par
+\par
+input:focus,\par
+textarea:focus \{\par
+  border-color: #4f46e5;\par
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);\par
+  outline: none;\par
+\}\par
+\par
+.message \{\par
+  min-height: 20px;\par
+  font-weight: 800;\par
+  margin-top: 10px;\par
+\}\par
+\par
+.map-wrap iframe \{\par
+  width: 100%;\par
+  height: 300px;\par
+  border: 0;\par
+  border-radius: 8px;\par
+  box-shadow: 0 8px 20px rgba(29, 45, 106, 0.18);\par
+\}\par
+\par
+footer \{\par
+  background: linear-gradient(135deg, #0d1433, #111f4f);\par
+  color: #e2e8ff;\par
+  text-align: center;\par
+  padding: 18px 12px;\par
+  margin-top: 24px;\par
+  font-weight: 700;\par
+\}\par
+\par
+@media (max-width: 760px) \{\par
+  .navbar \{\par
+    flex-direction: column;\par
+    align-items: flex-start;\par
+  \}\par
+\par
+  .hero-content h1 \{\par
+    font-size: 1.65rem;\par
+  \}\par
+\par
+  .nav-links \{\par
+    flex-wrap: wrap;\par
+  \}\par
+\}\par
+
+\par\par\b script.js\b0\par
+const leaveForm = document.getElementById("leaveApplicationForm");\par
+const loginForm = document.getElementById("loginForm");\par
+\par
+leaveForm.addEventListener("submit", (event) => \{\par
+  event.preventDefault();\par
+\par
+  const fromDate = new Date(document.getElementById("leaveFrom").value);\par
+  const toDate = new Date(document.getElementById("leaveTo").value);\par
+  const leaveMessage = document.getElementById("leaveMessage");\par
+\par
+  if (toDate < fromDate) \{\par
+    leaveMessage.textContent = "Leave To date cannot be before Leave From date.";\par
+    leaveMessage.style.color = "#c62828";\par
+    return;\par
+  \}\par
+\par
+  leaveMessage.textContent = "Leave request submitted successfully.";\par
+  leaveMessage.style.color = "#1b5e20";\par
+  leaveForm.reset();\par
+\});\par
+\par
+loginForm.addEventListener("submit", (event) => \{\par
+  event.preventDefault();\par
+  const loginMessage = document.getElementById("loginMessage");\par
+  loginMessage.textContent = "Login successful. Welcome to the resident portal.";\par
+  loginMessage.style.color = "#1b5e20";\par
+  loginForm.reset();\par
+\});\par
+
+\par}

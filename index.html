@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Girl Hostel - NIT Kurukshetra</title>
+    <link rel="icon" type="image/png" href="nitkkr-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <div class="brand">
+          <img src="nitkkr-logo.png" alt="NIT Kurukshetra logo" class="brand-logo" />
+          <span>Cauvery Girl Hostel</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#fees">Fees</a></li>
+          <li><a href="#leave-form">Leave Form</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Cauvery Girl Hostel, NIT Kurukshetra</h1>
+        <p>
+          A complete hostel portal for residents with fee details, leave request
+          management, and quick access to hostel resources.
+        </p>
+        <a href="#leave-form" class="btn">Apply for Leave</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section card">
+        <h2>About Our Hostel</h2>
+        <p>
+          Cauvery Girl Hostel, NIT Kurukshetra provides secure accommodation for
+          students with
+          24/7 warden support, CCTV monitoring, high-speed Wi-Fi, and hygienic
+          food services.
+        </p>
+        <div class="info-grid">
+          <article>
+            <h3>Facilities</h3>
+            <ul>
+              <li>Total 292 rooms available</li>
+              <li>All rooms are single seater</li>
+              <li>Laundry and Housekeeping</li>
+              <li>Biometric Entry System</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Hostel Rules</h3>
+            <ul>
+              <li>Entry before 9:00 PM</li>
+              <li>Visitor timings: 5:00 PM - 7:00 PM</li>
+              <li>Mandatory ID card for entry</li>
+              <li>Silence hours after 10:30 PM</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="fees" class="section card">
+        <h2>Hostel Fee Details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Room Type</th>
+              <th>Monthly Fee</th>
+              <th>Security Deposit</th>
+              <th>Mess Charges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Triple Sharing (Non-AC)</td>
+              <td>INR 6,000</td>
+              <td>INR 3,000</td>
+              <td>INR 2,000</td>
+            </tr>
+            <tr>
+              <td>Double Sharing (Non-AC)</td>
+              <td>INR 7,500</td>
+              <td>INR 3,000</td>
+              <td>INR 2,000</td>
+            </tr>
+            <tr>
+              <td>Double Sharing (AC)</td>
+              <td>INR 9,500</td>
+              <td>INR 4,000</td>
+              <td>INR 2,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="leave-form" class="section card">
+        <h2>Leave Application Form</h2>
+        <form id="leaveApplicationForm">
+          <div class="form-row">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" required />
+          </div>
+          <div class="form-row">
+            <label for="roomNumber">Room Number</label>
+            <input type="text" id="roomNumber" required />
+          </div>
+          <div class="form-row">
+            <label for="leaveFrom">Leave From</label>
+            <input type="date" id="leaveFrom" required />
+          </div>
+          <div class="form-row">
+            <label for="leaveTo">Leave To</label>
+            <input type="date" id="leaveTo" required />
+          </div>
+          <div class="form-row">
+            <label for="reason">Reason</label>
+            <textarea id="reason" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Application</button>
+          <p id="leaveMessage" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="location" class="section card">
+        <h2>Hostel Location</h2>
+        <p>Cauvery Girl Hostel, NIT Kurukshetra, Haryana, India.</p>
+        <div class="map-wrap">
+          <iframe
+            title="Hostel location map"
+            src="https://www.google.com/maps?q=NIT+Kurukshetra+Haryana&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="login" class="section card">
+        <h2>Resident Login</h2>
+        <form id="loginForm">
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="6" required />
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p id="loginMessage" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact: +91-98765-43210 | Email: cauveryhostel@nitkkr.ac.in</p>
+      <p>Emergency Warden Helpline: +91-90000-12121</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
