@@ -1,0 +1,365 @@
+{\rtf1\ansi\deff0
+\b Hostel Webpage Practical - Shweta Sharma\b0\par
+Assignment: Create a hostel webpage using HTML, CSS, and JavaScript with background image, leave form, hostel fee details, map location, and login page.\par\par
+\b Deployment Link (for verification):\b0 https://DEPLOYMENT-LINK-PENDING\par
+Note: Replace this placeholder with your live public deployment link after publishing.\par\par
+\b index.html\b0\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+  <head>\par
+    <meta charset="UTF-8" />\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\par
+    <title>Shanti Girls Hostel</title>\par
+    <link rel="stylesheet" href="styles.css" />\par
+  </head>\par
+  <body>\par
+    <header class="hero" id="home">\par
+      <nav class="navbar">\par
+        <div class="brand">Shanti Girls Hostel</div>\par
+        <ul class="nav-links">\par
+          <li><a href="#about">About</a></li>\par
+          <li><a href="#fees">Fees</a></li>\par
+          <li><a href="#leave-form">Leave Form</a></li>\par
+          <li><a href="#location">Location</a></li>\par
+          <li><a href="#login">Login</a></li>\par
+        </ul>\par
+      </nav>\par
+      <div class="hero-content">\par
+        <h1>Safe, Comfortable, Student-Friendly Living</h1>\par
+        <p>\par
+          A complete hostel portal for residents with fee details, leave request\par
+          management, and quick access to hostel resources.\par
+        </p>\par
+        <a href="#leave-form" class="btn">Apply for Leave</a>\par
+      </div>\par
+    </header>\par
+\par
+    <main>\par
+      <section id="about" class="section card">\par
+        <h2>About Our Hostel</h2>\par
+        <p>\par
+          Shanti Girls Hostel provides secure accommodation for students with\par
+          24/7 warden support, CCTV monitoring, high-speed Wi-Fi, and hygienic\par
+          food services.\par
+        </p>\par
+        <div class="info-grid">\par
+          <article>\par
+            <h3>Facilities</h3>\par
+            <ul>\par
+              <li>AC and Non-AC Rooms</li>\par
+              <li>Study Hall and Library Space</li>\par
+              <li>Laundry and Housekeeping</li>\par
+              <li>Biometric Entry System</li>\par
+            </ul>\par
+          </article>\par
+          <article>\par
+            <h3>Hostel Rules</h3>\par
+            <ul>\par
+              <li>Entry before 9:00 PM</li>\par
+              <li>Visitor timings: 5:00 PM - 7:00 PM</li>\par
+              <li>Mandatory ID card for entry</li>\par
+              <li>Silence hours after 10:30 PM</li>\par
+            </ul>\par
+          </article>\par
+        </div>\par
+      </section>\par
+\par
+      <section id="fees" class="section card">\par
+        <h2>Hostel Fee Details</h2>\par
+        <table>\par
+          <thead>\par
+            <tr>\par
+              <th>Room Type</th>\par
+              <th>Monthly Fee</th>\par
+              <th>Security Deposit</th>\par
+              <th>Mess Charges</th>\par
+            </tr>\par
+          </thead>\par
+          <tbody>\par
+            <tr>\par
+              <td>Triple Sharing (Non-AC)</td>\par
+              <td>INR 6,000</td>\par
+              <td>INR 3,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+            <tr>\par
+              <td>Double Sharing (Non-AC)</td>\par
+              <td>INR 7,500</td>\par
+              <td>INR 3,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+            <tr>\par
+              <td>Double Sharing (AC)</td>\par
+              <td>INR 9,500</td>\par
+              <td>INR 4,000</td>\par
+              <td>INR 2,000</td>\par
+            </tr>\par
+          </tbody>\par
+        </table>\par
+      </section>\par
+\par
+      <section id="leave-form" class="section card">\par
+        <h2>Leave Application Form</h2>\par
+        <form id="leaveApplicationForm">\par
+          <div class="form-row">\par
+            <label for="studentName">Student Name</label>\par
+            <input type="text" id="studentName" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="roomNumber">Room Number</label>\par
+            <input type="text" id="roomNumber" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="leaveFrom">Leave From</label>\par
+            <input type="date" id="leaveFrom" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="leaveTo">Leave To</label>\par
+            <input type="date" id="leaveTo" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="reason">Reason</label>\par
+            <textarea id="reason" rows="4" required></textarea>\par
+          </div>\par
+          <button type="submit" class="btn">Submit Application</button>\par
+          <p id="leaveMessage" class="message" aria-live="polite"></p>\par
+        </form>\par
+      </section>\par
+\par
+      <section id="location" class="section card">\par
+        <h2>Hostel Location</h2>\par
+        <p>Shanti Girls Hostel, Sector 14, Noida, Uttar Pradesh, India.</p>\par
+        <div class="map-wrap">\par
+          <iframe\par
+            title="Hostel location map"\par
+            src="https://www.google.com/maps?q=Sector+14+Noida&output=embed"\par
+            loading="lazy"\par
+          ></iframe>\par
+        </div>\par
+      </section>\par
+\par
+      <section id="login" class="section card">\par
+        <h2>Resident Login</h2>\par
+        <form id="loginForm">\par
+          <div class="form-row">\par
+            <label for="email">Email</label>\par
+            <input type="email" id="email" required />\par
+          </div>\par
+          <div class="form-row">\par
+            <label for="password">Password</label>\par
+            <input type="password" id="password" minlength="6" required />\par
+          </div>\par
+          <button type="submit" class="btn">Login</button>\par
+          <p id="loginMessage" class="message" aria-live="polite"></p>\par
+        </form>\par
+      </section>\par
+    </main>\par
+\par
+    <footer>\par
+      <p>Contact: +91-98765-43210 | Email: office@shantihostel.in</p>\par
+      <p>Emergency Warden Helpline: +91-90000-12121</p>\par
+    </footer>\par
+\par
+    <script src="script.js"></script>\par
+  </body>\par
+</html>\par
+
+\par\par\b styles.css\b0\par
+* \{\par
+  box-sizing: border-box;\par
+\}\par
+\par
+body \{\par
+  margin: 0;\par
+  font-family: Arial, Helvetica, sans-serif;\par
+  background: #f5f7fb;\par
+  color: #222;\par
+  line-height: 1.5;\par
+\}\par
+\par
+.hero \{\par
+  min-height: 80vh;\par
+  background-image: linear-gradient(rgba(20, 25, 52, 0.7), rgba(20, 25, 52, 0.7)),\par
+    url("https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1600&q=80");\par
+  background-size: cover;\par
+  background-position: center;\par
+  color: #fff;\par
+  padding: 0 20px 30px;\par
+\}\par
+\par
+.navbar \{\par
+  display: flex;\par
+  justify-content: space-between;\par
+  align-items: center;\par
+  padding: 18px 8px;\par
+\}\par
+\par
+.brand \{\par
+  font-size: 1.2rem;\par
+  font-weight: 700;\par
+\}\par
+\par
+.nav-links \{\par
+  list-style: none;\par
+  display: flex;\par
+  gap: 16px;\par
+  padding: 0;\par
+  margin: 0;\par
+\}\par
+\par
+.nav-links a \{\par
+  color: #fff;\par
+  text-decoration: none;\par
+  font-weight: 600;\par
+\}\par
+\par
+.hero-content \{\par
+  max-width: 760px;\par
+  margin: 72px auto 0;\par
+  text-align: center;\par
+\}\par
+\par
+.hero-content h1 \{\par
+  font-size: 2.2rem;\par
+  margin-bottom: 10px;\par
+\}\par
+\par
+.btn \{\par
+  background: #0066ff;\par
+  color: #fff;\par
+  border: none;\par
+  padding: 11px 18px;\par
+  border-radius: 7px;\par
+  cursor: pointer;\par
+  text-decoration: none;\par
+  display: inline-block;\par
+  font-weight: 700;\par
+\}\par
+\par
+.btn:hover \{\par
+  background: #0051cb;\par
+\}\par
+\par
+main \{\par
+  max-width: 1050px;\par
+  margin: 28px auto;\par
+  padding: 0 14px;\par
+\}\par
+\par
+.section \{\par
+  margin-bottom: 20px;\par
+\}\par
+\par
+.card \{\par
+  background: #fff;\par
+  border-radius: 10px;\par
+  padding: 20px;\par
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\par
+\}\par
+\par
+.info-grid \{\par
+  display: grid;\par
+  gap: 16px;\par
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\par
+\}\par
+\par
+table \{\par
+  width: 100%;\par
+  border-collapse: collapse;\par
+\}\par
+\par
+th,\par
+td \{\par
+  border: 1px solid #d5dbea;\par
+  padding: 10px;\par
+  text-align: left;\par
+\}\par
+\par
+th \{\par
+  background: #eef3ff;\par
+\}\par
+\par
+.form-row \{\par
+  margin-bottom: 12px;\par
+\}\par
+\par
+label \{\par
+  display: block;\par
+  margin-bottom: 5px;\par
+  font-weight: 700;\par
+\}\par
+\par
+input,\par
+textarea \{\par
+  width: 100%;\par
+  padding: 10px;\par
+  border: 1px solid #c7cee2;\par
+  border-radius: 7px;\par
+\}\par
+\par
+.map-wrap iframe \{\par
+  width: 100%;\par
+  height: 300px;\par
+  border: 0;\par
+  border-radius: 8px;\par
+\}\par
+\par
+.message \{\par
+  margin-top: 10px;\par
+  font-weight: 700;\par
+\}\par
+\par
+footer \{\par
+  background: #1a2143;\par
+  color: #dce3ff;\par
+  text-align: center;\par
+  padding: 16px;\par
+\}\par
+\par
+@media (max-width: 700px) \{\par
+  .navbar \{\par
+    flex-direction: column;\par
+    gap: 10px;\par
+  \}\par
+\par
+  .hero-content h1 \{\par
+    font-size: 1.6rem;\par
+  \}\par
+\par
+  .nav-links \{\par
+    flex-wrap: wrap;\par
+    justify-content: center;\par
+  \}\par
+\}\par
+
+\par\par\b script.js\b0\par
+const leaveForm = document.getElementById("leaveApplicationForm");\par
+const loginForm = document.getElementById("loginForm");\par
+\par
+leaveForm.addEventListener("submit", function (event) \{\par
+  event.preventDefault();\par
+\par
+  const fromDate = new Date(document.getElementById("leaveFrom").value);\par
+  const toDate = new Date(document.getElementById("leaveTo").value);\par
+  const leaveMessage = document.getElementById("leaveMessage");\par
+\par
+  if (toDate < fromDate) \{\par
+    leaveMessage.textContent = "Leave To date cannot be before Leave From date.";\par
+    leaveMessage.style.color = "#c62828";\par
+    return;\par
+  \}\par
+\par
+  leaveMessage.textContent = "Leave application submitted successfully.";\par
+  leaveMessage.style.color = "#1b5e20";\par
+  leaveForm.reset();\par
+\});\par
+\par
+loginForm.addEventListener("submit", function (event) \{\par
+  event.preventDefault();\par
+  const loginMessage = document.getElementById("loginMessage");\par
+  loginMessage.textContent = "Login successful. Welcome to resident dashboard.";\par
+  loginMessage.style.color = "#1b5e20";\par
+  loginForm.reset();\par
+\});\par
+
+\par}
