@@ -1,8 +1,8 @@
-{\rtf1\ansi\deff0{\colortbl ;\red0\green102\blue204;}
+{\rtf1\ansi\deff0
 \b Hostel Webpage Practical Submission\b0\par
 Practical: Create a hostel webpage using HTML, CSS, and JavaScript with background image, leave application form, hostel fee details, hostel location map, login page, and related information.\par\par
-\b Open-source Repository Link:\b0 {\field{\*\fldinst HYPERLINK "https://github.com/Bhavna248/Hostel_Webpage" }{\fldrslt {\ul\cf1 https://github.com/Bhavna248/Hostel_Webpage}}}\par
-\b Deployment Link (Verification):\b0 {\field{\*\fldinst HYPERLINK "https://bhavna248.github.io/Hostel_Webpage/" }{\fldrslt {\ul\cf1 https://bhavna248.github.io/Hostel_Webpage/}}}\par\par
+\b Open-source Repository Link:\b0 https://github.com/Bhavna248/Hostel_Webpage_Practical\par
+\b Deployment Link (Verification):\b0 https://bhavna248.github.io/Hostel_Webpage_Practical/\par\par
 \b Project Files Included:\b0 index.html, styles.css, script.js\par\par
 \b index.html\b0\par
 <!DOCTYPE html>\par
